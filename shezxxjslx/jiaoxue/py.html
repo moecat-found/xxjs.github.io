@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #FF0000;
+}
+.STYLE5 {color: #FF0000}
+.STYLE7 {color: #FF0000; font-weight: bold; }
+-->
+</style>
+</head>
+
+<body>
+<table width="800" border="0">
+  <tr>
+    <td><div align="center"><span class="STYLE1">Python</span><span class="STYLE7">基础知识</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pythongaicuo.html" target="_blank">例题</a>&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><span class="STYLE5">---------------------------------------------------------------------------------------------------------------------</span></div></td>
+  </tr>
+  <tr>
+    <td>1、<strong>python文件打开方法</strong>：
+    选中文件—&gt;右键单击，快捷菜单里选择Edit with IDEL—&gt;Edit with IDEL 3.X（如：3.4、3.6表示版本号），如下图所示。</td>
+  </tr>
+  <tr>
+    <td><img src="pic/python.png" width="828" height="125" /></td>
+  </tr>
+  <tr>
+    <td><div align="center"><span class="STYLE5">---------------------------------------------------------------------------------------------------------------------</span></div></td>
+  </tr>
+  <tr>
+    <td>2、
+    <strong>Python编程中的输入、强制类型转换和输出</strong></td>
+  </tr>
+  <tr>
+    <td><table width="827" height="1090" border="1">
+      <tr>
+        <td width="128">基本语法</td>
+        <td width="226">说明</td>
+        <td width="451">示例</td>
+        </tr>
+      <tr>
+        <td>打印输出：print()</td>
+        <td>在&#8194;Python&#8194;中，使用&#8194;<strong>print()</strong>&#8194;函数来输出信息到控制台。默认情况下，print函数每次调用都会自动在输出的内容之后加上一个换行符，即光标都会移动到下一行</td>
+        <td>print(&quot;Hello,&#8194;Python!&quot;)&nbsp;&nbsp;#&#8194;打印Hello,&#8194;World! </td>
+        </tr>
+      <tr>
+        <td colspan="3"><img src="pic/print.png" width="907" height="241" /></td>
+        </tr>
+      <tr>
+        <td>end=参数</td>
+        <td>在Python中，end= 参数通常用在 print() 函数中，用来指定字符串末尾追加的字符（或者字符串）。通过这种方式，可以更灵活地控制打印输出的格式。</td>
+        <td><table width="100%" border="1">
+          <tr bordercolor="#F0F0F0">
+            <td>示例</td>
+            <td>输出</td>
+          </tr>
+          <tr bordercolor="#F0F0F0">
+            <td>#默认行为（添加换行符）：<br />
+              print(&quot;Hello&quot;)<br />
+              print(&quot;World&quot;)</td>
+            <td>Hello<br />
+              World</td>
+          </tr>
+          <tr bordercolor="#F0F0F0">
+            <td>#使用end=参数（不换行，用空格代替）：<br />
+              print(&quot;Hello&quot;, end=&quot; &quot;)<br />
+              print(&quot;World&quot;)</td>
+            <td>Hello World</td>
+          </tr>
+          <tr bordercolor="#F0F0F0">
+            <td>#使用end=参数（在字符串后添加逗号）：<br />
+              print(&quot;Hello&quot;, end=&quot;, &quot;)<br />
+              print(&quot;World&quot;)</td>
+            <td>Hello, World</td>
+          </tr>
+          <tr bordercolor="#F0F0F0">
+            <td>#使用end=参数（不添加任何字符）：<br />
+              print(&quot;Hello&quot;, end=&quot;&quot;)<br />
+              print(&quot;World&quot;)</td>
+            <td>HelloWorld</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>注释:&#8194;#&#8194;</td>
+        <td>Python&#8194;中的注释以<strong>&#8194;#</strong>&#8194;开头，用于解释代码的功能和作用或暂时禁用代码行。可以位于代码行前面，也可以位于代码行末尾</td>
+        <td>#&#8194;声明变量<br />
+name&#8194;=&#8194;&quot;Alice&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #&#8194;字符串<br />
+age&#8194;=&#8194;30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8194;&#8194;#&#8194;整数 <br />
+is_student&#8194;=&#8194;False &#8194;&nbsp;&nbsp;&nbsp;#&#8194;布尔值</td>
+        </tr>
+      <tr>
+        <td>输入函数:input()</td>
+        <td>在&#8194;Python&#8194;中，使用<strong>input()</strong>从控制台获取用户输入并返回<span class="STYLE5"><strong>字符串类型</strong></span>的结果</td>
+        <td><p >a=int(input())      #输入一个整数   输入语句注意定义输入数据类型 <br />
+          b=int(input())      #（换行）输入一个整数</p></td>
+        </tr>
+      <tr>
+        <td>变量定义：var = value</td>
+        <td>var = value用于定义变量并赋值。 在&#8194;Python&#8194;中，变量不需要声明类型，其类型由赋给它的值决定。</td>
+        <td>#&#8194;声明变量<br /> 
+          name&#8194;=&#8194;&quot;Alice&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #&#8194;字符串<br />
+          age&#8194;=&#8194;30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8194;&#8194;#&#8194;整数 <br />
+          is_student&#8194;=&#8194;False &#8194;&nbsp;&nbsp;&nbsp;#&#8194;布尔值<br />
+          #&#8194;打印变量&#8194;<br />
+          print(name,&#8194;&quot;is&quot;,&#8194;age,&#8194;&quot;years&#8194;old&#8194;and&#8194;is&#8194;a&#8194;student:&quot;,&#8194;is_student) <br /></td>
+        </tr>
+      <tr>
+        <td><p >条件语句</p>
+          ：if...elif...els</td>
+        <td><p >Python&#8194;使用&#8194;if、elif（else&#8194;if&#8194;的缩写）、else&#8194;语句来处理条件逻辑。根据条件执行不同的代码块。</p></td>
+        <td><p align="justify" >x&#8194;=&#8194;10 <br />
+          if&#8194;x&#8194;&gt;&#8194;5: <br />
+          &#8194;&#8194;&#8194;&#8194;print(&quot;x&#8194;is&#8194;greater&#8194;than&#8194;5&quot;) <br />
+          elif&#8194;x&#8194;==&#8194;5: <br />
+          &#8194;&#8194;&#8194;&#8194;print(&quot;x&#8194;is&#8194;equal&#8194;to&#8194;5&quot;) <br />
+          else: <br />
+          &#8194;&#8194;&#8194;&#8194;print(&quot;x&#8194;is&#8194;less&#8194;than&#8194;5&quot;) </p></td>
+      </tr>
+      <tr>
+        <td>For&#8194;循环 </td>
+        <td><p >循环用于重复执行一段代码直到满足特定条件。for&#8194;循环用于遍历任何序列（如列表、元组或字符串）。 </p></td>
+        <td><p >#&#8194;使用for循环遍历列<br />
+          fruits&#8194;=&#8194;[&quot;apple&quot;,&#8194;&quot;banana&quot;,&#8194;&quot;cherry&quot;] <br />
+          for&#8194;fruit&#8194;in&#8194;fruits: <br />
+          &#8194;&#8194;&#8194;&#8194;print(fruit) </p>          </td>
+      </tr>
+      <tr>
+        <td><p >While循环</p></td>
+        <td><p >while&#8194;循环在给定条件为真时重复执行一组语句。</p></td>
+        <td><p align="justify" >#&#8194;使用while循环 <br />
+          count&#8194;=&#8194;0 <br />
+          while&#8194;count&#8194;&lt;&#8194;5: <br />
+          &#8194;&#8194;&#8194;&#8194;print(&quot;Count&#8194;is:&quot;,&#8194;count) <br />
+          &#8194;&#8194;&#8194;&#8194;count&#8194;+=&#8194;1 </p></td>
+      </tr>
+      <tr>
+        <td>函数定义：
+          <p >def &nbsp;&nbsp;函数名(参数)</p></td>
+        <td><p align="justify" >函数是组织好的、可重复使用的、用来实现单一或相关联功能的代码块。定义一个函数，包括函数名和参数。</p>          </td>
+        <td><p align="justify" >#&#8194;定义函数 <br />
+          def&#8194;greet(name): <br />
+          &#8194;&#8194;&#8194;&#8194;print(&quot;Hello,&quot;,&#8194;name)</p></td>
+      </tr>
+      <tr>
+        <td><p >调用函数：函数名(参数)</p></td>
+        <td><p >调用已定义的函数，并传递参数。注意参数个数与定义个数一致</p>
+          </td>
+        <td><p align="justify" >#&#8194;调用函数 <br />
+          greet(&quot;Bob&quot;)</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><div align="center"><span class="STYLE5">---------------------------------------------------------------------------------------------------------------------</span></div></td>
+  </tr>
+  <tr>
+    <td><p align="justify" ><strong>3、Python的基本的数据类型</strong>：字符串（str）、整数（int）、浮点数（float）、布尔值（bool）、列表（list）、元组（tuple）、</p></td>
+  </tr>
+  <tr>
+    <td>字典（dict）和集合（set）。 </td>
+  </tr>
+  <tr>
+    <td>字符串(str)：是&#8194;Python&#8194;中用于表示文本的数据类型。可以使用单引号（'）或双引号（&quot;）定义。 例：greeting&#8194;=&#8194;&quot;Hello,&#8194;Python!&quot;</td>
+  </tr>
+  <tr>
+    <td>布尔值(bool)：只有两个值：True&#8194;和&#8194;False。</td>
+  </tr>
+  <tr>
+    <td>列表（list）：是&#8194;Python&#8194;中用于存储多个项目（可以是不同类型）的集合，用方括号（[]）表示。 </td>
+  </tr>
+  <tr>
+    <td>例：my_list&#8194;=&#8194;[1,&#8194;2,&#8194;3,&#8194;&quot;Python&quot;,&#8194;True] </td>
+  </tr>
+  <tr>
+    <td>元组（tuple）：与列表类似，但元组是不可变的，一旦创建就不能更改。用圆括号（()）表示。</td>
+  </tr>
+  <tr>
+    <td>例：my_tuple&#8194;=&#8194;(1,&#8194;2,&#8194;3) </td>
+  </tr>
+  <tr>
+    <td>字典（dict)：是一种可变容器模型，可以存储任意类型对象，如字符串、数字、元组等其他容器模型。字典的每个元素都是一个键值对，键和值之间用冒号（:）分隔，整个字典包括在一对大括号（{}）中。 </td>
+  </tr>
+  <tr>
+    <td>例：my_dict&#8194;=&#8194;{&quot;name&quot;:&#8194;&quot;John&quot;,&#8194;&quot;age&quot;:&#8194;30,&#8194;&quot;city&quot;:&#8194;&quot;New&#8194;York&quot;}</td>
+  </tr>
+  <tr>
+    <td><strong>4、数据类型转换函数</strong></td>
+  </tr>
+  <tr>
+    <td>int()、float()、str()、list()、tuple()、set()、dict()：将一种数据类型转换为另一种数据类型。 </td>
+  </tr>
+  
+  <tr>
+    <td><div align="center"></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3 >&nbsp;</h3></td>
+  </tr>
+  <tr>
+    <td><p align="justify" >&nbsp;</p>      </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="center"><span class="STYLE5">---------------------------------------------------------------------------------------------------------------------</span></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

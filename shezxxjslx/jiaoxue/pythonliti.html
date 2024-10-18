@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+.STYLE1 {font-weight: bold}
+.STYLE2 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr>
+    <td colspan="2">&nbsp;
+      <div align="center"><span class="STYLE1"><a href="pythongaicuo.html" target="_blank">Python程序编程改错</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pythonliti.html" target="_blank">Python程序编程例题</a></span> </div>
+    <div align="center"></div></td>
+  </tr>
+  <tr>
+    <td colspan="2"><hr /></td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center" class="STYLE2">编程例题</div></td>
+  </tr>
+  <tr>
+    <td colspan="2">1、小王日前在某银行办理一个整存整取的业务，存款n元，存期为一年，已知该银行一年期的年存款利率为1.8%，求小王这笔钱到期后的利息是多少元。 </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p >n=float(input())      #也可以用 n=eval(input())    <br />
+      m=n*1.8/100 <br />
+    print(“%.1f”%m)</p></td>
+  </tr>
+  <tr>
+    <td colspan="2"><p >2、某林场种植一批树苗，已知该树苗的成活率是83%，求种植n万棵树苗能成活多少万棵（保留两位小数）</p></td>
+  </tr>
+  <tr>
+    <td colspan="2"><p >n=int(input())    <br />
+      m=n*83/100 <br />
+    print(“%.2f”%m) </p></td>
+  </tr>
+  <tr>
+    <td colspan="2">3、学校原有20个篮球，又购进了n个篮球，求学校现在共有多少个篮球。 </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p >n=int(input())    <br />
+      m=20+n <br />
+    print(m) </p></td>
+  </tr>
+  <tr>
+    <td colspan="2">4、超市购进了可乐m箱，每箱40元，红牛n箱，每箱130元，求购买可乐好红牛共花费了多少元。 </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p >m=int(input())    <br />
+      n=int(input())    <br />
+    print(m*40+n*130)</p></td>
+  </tr>
+  <tr>
+    <td colspan="2"><p >5.打开 Python 文件夹中的test3.py文件，在其中编写程序解决如下问题： <br />
+      【问题描述】 <br />
+      小明周末准备和几个同学去野外郊游，他携带500元到超市采购了若干零食，请编程计算各种零食的花费和剩余的钱数。 <br />
+      【输入】 <br />
+      输入有 n +1行，前 n 行每行有3部分，依次为购买零食的名称、单价、数量，各部分之间用1个空格隔开。第 n +1行只有1个﹣1，表示输入结束 <br />
+      【输出】 <br />
+      输出有 n +1行，前 n 行有两部分，依次为零食的名称和花费的线数，两部分之间用1个空格隔开，第 n +1行是剩余的钱数 <br />
+      【输入／输出样例】 <br />
+      输入 <br />
+      酸奶 2.5 10 <br />
+      巧克力 7 10 <br />
+      面包 5 10 <br />
+      火腿 2 20 <br />
+      薯片 9.5 5 <br />
+      -1 <br />
+      输出 <br />
+      酸奶 25.0 <br />
+      巧克力 70 <br />
+      面包 50 <br />
+      火腿 40 <br />
+      薯片 47.5 <br />
+    267.5 </p></td>
+  </tr>
+  <tr>
+    <td><p ><strong>程序1：</strong></p>
+      <p >sum=500 <br />
+        lsa=[] <br />
+        lsb=[] <br />
+        while(True): <br />
+            
+      lsb=input() <br />
+          
+      if (lsb.startswith(&quot;-1&quot;)): <br />
+              
+      break; <br />
+          
+      else: <br />
+              
+      lsa.append(lsb.split()) <br />
+               <br />
+      for i in range(0,len(lsa)): <br />
+          
+      sum1=float(lsa[i][1])*float(lsa[i][2]) <br />
+          
+      print(lsa[i][0],sum1) <br />
+          
+      sum=sum-sum1 <br />
+    print(sum) </p></td>
+    <td><p ><strong>程序2：</strong><strong> </strong><br />
+      qs=0     #每项金额 <br />
+      zs=0     #总金额 <br />
+      n=0      #种类 <br />
+      ls1=[]   #种类名称列表 <br />
+      ls2=[]   #所有项金额列表 </p>
+      <p >l=list(input().split()) <br />
+        while l[0]!=&quot;-1&quot;: <br />
+            
+        qs=eval(l[1])*eval(l[2]) <br />
+            
+        ls1.append(l[0]) <br />
+            
+        ls2.append(qs) <br />
+            
+        n=n+1 <br />
+            
+        zs=zs+qs <br />
+        l=list(input().split()) <br />
+        for i in range(n): <br />
+            
+        print(ls1[i],&quot;{:.1f}&quot;.format(ls2[i])) <br />
+    print(500-zs) </p></td>
+  </tr>
+  <tr>
+    <td colspan="2"><p >6.打开外python文件夹中时的test3.gy文件，在其中写程序解决如下问题: <br />
+      问题描述 <br />
+      顾客到张记自助串串店用餐，吃完串串结账时，服务员会数一下相应餐桌上的签子的种类和数量，并据此计算出顾客应付的钱数。已知 :竹签子1元/个，铁签子5元(个，请编写一个程序计算顾客消费的钱数。 </p>
+      <p >输入 <br />
+        输入有n+1行，第1行只有]个整数n，表示需要计算的总桌数，接下来的n行，每行有3部分，依次桌号，竹签子数量。铁签子数量，各部分之间用1个空格陪开 </p>
+      <p >输出 <br />
+        输出有n行，每行有两部分，依为桌号和该桌消费的钱数，两部分之间用1个空格隔开 <br />
+        输入/输出样例 <br />
+        输入 <br />
+        4 <br />
+        001 10 5 <br />
+        002 8 8 <br />
+        003 9 7 <br />
+        004 12 8 </p>
+      <p >输出 <br />
+        001 35 <br />
+        002 48 <br />
+        003 44 <br />
+    004 52 </p></td>
+  </tr>
+  <tr>
+    <td colspan="2">程序：</td>
+  </tr>
+  <tr>
+    <td colspan="2"><p >lsa=[] <br />
+      n=int(input()) <br />
+      for i in range(0,n): <br />
+          
+      lsa.append(input().split()) </p>
+      <p >for i in range(0,n): <br />
+            
+        sum=int(lsa[i][1])+int(lsa[i][2])*5 <br />
+            
+    print(lsa[i][0],sum) </p></td>
+  </tr>
+  <tr>
+    <td colspan="2">7、打开 Python 文件夹中的test3.py文件，在其中编写程序解决如下问题： 
+      <br />
+      问题描述 <br />
+      育英中学期末对学生进行综合素质评定，按照公式：总评成绩=平时成绩X70%，计算每个学生的总评成绩，并依据分数与成绩等级的对应关系（如下表所示），求A、B、C、D、E各档的人数和全体学生总评成绩的平均分。 
+      <table border="1" cellspacing="0" >
+        <tr>
+          <td width="76" valign="top" ><p >分数 </p></td>
+          <td width="53" valign="top" colspan="2" ><p >90及以上 </p></td>
+          <td width="42" valign="top" ><p >80-89 </p></td>
+          <td width="45" valign="top" ><p >70-79 </p></td>
+          <td width="51" valign="top" ><p >60-69 </p></td>
+          <td width="53" valign="top" ><p >60以下 </p></td>
+        </tr>
+        <tr>
+          <td width="76" valign="top" ><p >成绩等级 </p></td>
+          <td width="44" valign="top" ><p >A </p></td>
+          <td width="51" valign="top" colspan="2" ><p >B </p></td>
+          <td width="45" valign="top" ><p >C </p></td>
+          <td width="51" valign="top" ><p >D </p></td>
+          <td width="53" valign="top" ><p >E </p></td>
+        </tr>
+      </table>
+      <p >输入 <br />
+        输入有n+1行，前n行每行有三个部分，依次为学号、平时成绩、期末成绩，各部分之间用1个空格隔开。第n+1行只有一个-1，表示输入结束 <br />
+        输出 <br />
+        输出有2行，第1行有五部分，依次为A、B、C、D、E五个档次的人数，各部分之间用1个空格隔开，第2行只有1个数，表示总评成绩的平均分（表留两位小数） <br />
+        输入/输出样例 <br />
+        输入 <br />
+        001 95 90 <br />
+        002 92 90 <br />
+        003 86 76 <br />
+        004 85 80 <br />
+        005 70 65 <br />
+        006 70 44 <br />
+        -1 <br />
+        输出 <br />
+        2 1 1 1 1 <br />
+    76.82</p></td>
+  </tr>
+  <tr>
+    <td colspan="2">程序：</td>
+  </tr>
+  <tr>
+    <td colspan="2"><p >n=0     #人数 <br />
+      sa=0    #得A人数 <br />
+      sb=0 <br />
+      sc=0 <br />
+      sd=0 <br />
+      se=0 <br />
+      zf=0   #总分 </p>
+      <p >ls=list(input().split()) <br />
+        while ls[0]!=&quot;-1&quot;: <br />
+            
+        cj=eval(ls[1])*0.3+eval(ls[2])*0.7 #每个人的成绩     <br />
+            
+        if cj&gt;=90:                       <br />
+                
+        sa=sa+1 <br />
+            
+        elif cj&gt;=80: <br />
+                
+        sb=sb+1 <br />
+            
+        elif cj&gt;=70: <br />
+                
+        sc=sc+1 <br />
+            
+        elif cj&gt;=60: <br />
+                
+        sd=sd+1 <br />
+            
+        else: <br />
+                
+        se=se+1 <br />
+            
+        n=n+1 <br />
+            
+        zf=zf+cj <br />
+            
+        ls=list(input().split())     <br />
+        print(sa,sb,sc,sd,se,&quot;\n&quot;&quot;{:.2f}&quot;.format(zf/n)) # \n 换行符 <br />
+        #print(sa,sb,sc,sd,se,) <br />
+    #print(&quot;{:.2f}&quot;.format(zf/n)) </p></td>
+  </tr>
+</table>
+</body>
+</html>
